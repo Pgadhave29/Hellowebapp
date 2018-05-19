@@ -4,7 +4,7 @@ node {
     branches: [[name: '*/master']],
     doGenerateSubmoduleConfigurations: false,
     extensions: [], submoduleCfg: [],
-    userRemoteConfigs: [[url: 'https://github.com/Kiranp295/Devops.git']]])
+    userRemoteConfigs: [[url: 'https://github.com/Pgadhave29/Hellowebapp.git']]])
     } 
 
     stage ('Appbuild') { 
