@@ -12,9 +12,9 @@ node {
     }
     
     stage ('deployment') {
-    sh '''cp target/*.war /opt/apache-tomcat-8.5.31/webapps/
-    sh /opt/apache-tomcat-8.5.31/bin/shutdown.sh
-    sh /opt/apache-tomcat-8.5.31/bin/startup.sh'''
+    sh '''cp target/*.war /opt/tomcat/webapps/
+    sh /opt/tomcat/bin/shutdown.sh
+    sh /opt/tomcat/bin/startup.sh'''
     }
     stage ('archive Artifacts') {
     archiveArtifacts 'target/*.war'
